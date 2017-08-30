@@ -28,8 +28,8 @@ class App extends Component {
     let options = {
       method: 'POST',
       headers: {
-        //'Content-Type': 'application/json'
-        'Content-Type':'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json'
+        //'Content-Type':'application/x-www-form-urlencoded'
       },
       body: JSON.stringify(payload)
     }
@@ -61,7 +61,7 @@ class App extends Component {
        method: 'post',
         body : JSON.stringify(data),
         headers: {
-          'Content-Type':'application/x-www-form-urlencoded'
+          'Content-Type':'application/json'
         }
      })
      .then(function(response) {
